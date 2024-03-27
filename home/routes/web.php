@@ -37,4 +37,4 @@ Route::get('home/example', array('as' => 'admin.home', function ($id, $name) {
     $url = route('admin.home');
     
     // call to access the route
-});
+}));
