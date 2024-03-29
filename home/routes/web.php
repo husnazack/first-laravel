@@ -38,3 +38,6 @@ Route::get('/home/{id}/{name}', '\App\Http\Controllers\postController@index');
 
 // Route::get('/home', postController::class, 'index');
 // // alternative (new update)
+
+Route::resource('home', 'postController');
+// special static function

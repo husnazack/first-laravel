@@ -25,7 +25,8 @@ class postController extends Controller
      */
     public function create()
     {
-        //
+        //<localhost>
+        return "I am create";
     }
 
     /**
