@@ -13,24 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/home/{id}/{name}', function ($id, $name) {
-    return "this is home number" . $id . " " . $name;
+// Route::get('/home/{id}/{name}', function ($id, $name) {
+//     return "this is home number" . $id . " " . $name;
 
-    // {id} is variable. &id to retrieve variable.
-    // use for controller
-    // $url for grabbing route
-});
+//     // {id} is variable. &id to retrieve variable.
+//     // use for controller
+//     // $url for grabbing route
+// });
 
-Route::get('home/example', array('as' => 'admin.home', function ($id, $name) {
+// Route::get('home/example', array('as' => 'admin.home', function ($id, $name) {
     
-    $url = route('admin.home');
+//     $url = route('admin.home');
     
-    // call to access the route
-}));
+//     // call to access the route
+// }));
 
 Route::get('/home', 'postController@index');
 // to call index function from controller
