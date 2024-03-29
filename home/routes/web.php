@@ -21,13 +21,6 @@ Route::get('/home/{id}/{name}', function ($id, $name) {
     return "this is home number" . $id . " " . $name;
 
     // {id} is variable. &id to retrieve variable.
-    // passing parameter route
-});
-
-Route::get('/home/{id}/{name}', function ($id, $name) {
-    return "this is home number" . $id . " " . $name;
-
-    // {id} is variable. &id to retrieve variable.
     // use for controller
     // $url for grabbing route
 });
