@@ -15,9 +15,9 @@ class postController extends Controller
     //     return "hello una";
     // }
 
-    public function index($id)
+    public function index($id, $name)
     {
-        return "this method pass the id information:" .$id.;
+        return "this method pass the id information:" .$id .$name;
     }
 
     /**
