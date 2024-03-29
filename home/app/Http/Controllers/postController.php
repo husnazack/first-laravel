@@ -17,7 +17,7 @@ class postController extends Controller
 
     public function index($id,$name)
     {
-        return "this method pass the id information:" .$id .$name;
+        return "this method pass the index information: " .$id .$name;
     }
 
     /**
