@@ -33,7 +33,7 @@ Route::get('/home/{id}/{name}', function ($id, $name) {
 //     // call to access the route
 // }));
 
-Route::get('/home', '\App\Http\Controllers\postController@index');
+Route::get('/home/{id}', '\App\Http\Controllers\postController@index');
 // to call index function from controller (new update)
 
 // Route::get('/home', postController::class, 'index');
