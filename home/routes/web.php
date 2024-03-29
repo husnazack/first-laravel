@@ -36,5 +36,5 @@ Route::get('home/example', array('as' => 'admin.home', function ($id, $name) {
 Route::get('/home', '\App\Http\Controllers\postController@index');
 // to call index function from controller (new update)
 
-Route::get('/home', postController::class, 'index');
-// alternative (new update)
+// Route::get('/home', postController::class, 'index');
+// // alternative (new update)
