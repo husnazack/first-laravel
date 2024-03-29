@@ -9,10 +9,15 @@ class postController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    // public function index()
+    // {
+    //     //
+    //     return "hello una";
+    // }
+
+    public function index($id)
     {
-        //
-        return "hello una";
+        return "this method pass the id information:" .$id.;
     }
 
     /**
