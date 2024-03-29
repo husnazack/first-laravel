@@ -38,3 +38,6 @@ Route::get('home/example', array('as' => 'admin.home', function ($id, $name) {
     
     // call to access the route
 }));
+
+Route::get('/home', 'postController@index');
+// to call index function from controller
