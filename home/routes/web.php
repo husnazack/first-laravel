@@ -39,7 +39,9 @@ Route::get('/home/{id}/{name}', '\App\Http\Controllers\postController@index');
 // Route::get('/home', postController::class, 'index');
 // // alternative (new update)
 
-Route::resource('home', 'postController');
+Route::resource('contact', 'postController');
 // special static function
 // for example: http://127.0.0.1:8000/home/create
 // follow url: php artisan route:list
+
+Route::get('/contact', 'postController');

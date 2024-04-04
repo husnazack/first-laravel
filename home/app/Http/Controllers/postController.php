@@ -68,4 +68,12 @@ class postController extends Controller
     {
         //
     }
+
+    public function showPost($id,$name,$email)
+    {
+        // return view('contact') -> with($id,id);
+
+        return view('contact', compact('id','name','email'));
+
+    }
 }
