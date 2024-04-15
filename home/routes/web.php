@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\postController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,3 +48,5 @@ Route::get('/contact/{id}/{name}/{email}', '\App\Http\Controllers\postController
 // return class showPost
 
 Route::get('/contact', [postController::class, 'contact']);
+
+Route::resource('posts', postController::class);
