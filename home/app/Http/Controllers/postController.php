@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-namespace App\Http\postController;
 
 use Illuminate\Http\Request;
 
