@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+namespace App\Http\Controllers\postController;
 
 use Illuminate\Http\Request;
 
@@ -15,9 +16,9 @@ class postController extends Controller
     //     return "hello una";
     // }
 
-    public function index($id,$name)
+    public function index()
     {
-        return "this method pass the index information: " .$id .$name;
+        return "this method pass the index information: ";
     }
 
     /**
@@ -75,5 +76,12 @@ class postController extends Controller
 
         return view('contact', compact('id','name','email'));
 
+    }
+
+    public function contact()
+    {
+        $people = ['husna', 'saidatul', 'gojo', 'satoru'];
+        return view('contact', compact('people'));
+        // array
     }
 }

@@ -26,17 +26,17 @@ Route::get('/home/{id}/{name}', function ($id, $name) {
     // $url for grabbing route
 });
 
-// Route::get('home/example', array('as' => 'admin.home', function ($id, $name) {
+Route::get('home/example', array('as' => 'admin.home', function ($id, $name) {
     
-//     $url = route('admin.home');
+    $url = route('admin.home');
     
-//     // call to access the route
-// }));
+    // call to access the route
+}));
 
 Route::get('/home/{id}/{name}', '\App\Http\Controllers\postController@index');
 // to call index function from controller (new update)
 
-// Route::get('/home', postController::class, 'index');
+// Route::get('/home', [postController::class, 'index']);
 // // alternative (new update)
 
 Route::resource('contact', 'postController');
@@ -44,4 +44,7 @@ Route::resource('contact', 'postController');
 // for example: http://127.0.0.1:8000/home/create
 // follow url: php artisan route:list
 
-Route::get('/contact', 'postController');
+Route::get('/contact/{id}/{name}/{email}', '\App\Http\Controllers\postController@showPost');
+// return class showPost
+
+Route::get('/contact', [postController::class, 'contact']);
